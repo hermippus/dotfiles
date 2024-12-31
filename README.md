@@ -1,2 +1,2 @@
-# dotfiles
-My personal dotfiles: neovim, fish and more
+# My dotfiles
+Includes: Config for Fish Shell, NeoVim and more
