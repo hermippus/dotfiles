@@ -1,7 +1,7 @@
 # My dotfiles
 Includes: Config for fish shell, neovim and more
 
-## Install
+## Packages
 ```bash
 $ sudo pacman -S fish kitty neofetch
 ```
