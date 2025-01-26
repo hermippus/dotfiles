@@ -1,5 +1,5 @@
 # My dotfiles
-Includes: Config for fish shell, neovim and more
+Config for fish shell, neovim and more
 
 ## Packages
 ```bash
