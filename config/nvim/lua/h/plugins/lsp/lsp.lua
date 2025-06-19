@@ -60,46 +60,10 @@ return {
       end,
     })
 
-    local capabilities = cmp_nvim_lsp.default_capabilities()
-
     local signs = { Error = " ", Warn = " ", Hint = "󰠠 ", Info = " " }
     for type, icon in pairs(signs) do
       local hl = "DiagnosticSign" .. type
       vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
     end
-
-    mason_lspconfig.setup_handlers({
-      function(server_name)
-        lspconfig[server_name].setup({
-          capabilities = capabilities,
-        })
-      end,
-      ["emmet_ls"] = function()
-        lspconfig["emmet_ls"].setup({
-          capabilities = capabilities,
-          filetypes =
-            {
-            "css", "html", "javascript",
-            "javascriptreact", "less", "sass",
-            "scss", "pug", "typescriptreact", "vue"
-            },
-        })
-     end,
-     ["lua_ls"] = function()
-        lspconfig["lua_ls"].setup({
-          capabilities = capabilities,
-          settings = {
-            Lua = {
-              diagnostics = {
-                globals = { "vim" },
-              },
-              completion = {
-                callSnippet = "Replace",
-              },
-            },
-          },
-        })
-      end,
-    })
   end,
 }

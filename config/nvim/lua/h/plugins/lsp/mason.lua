@@ -21,28 +21,13 @@ return {
 
     mason_lspconfig.setup({
       ensure_installed = {
-        "clangd",
-        "asm_lsp",
-        "ts_ls",
-        "html",
-        "cssls",
-        "volar",
-        "tailwindcss",
-        "lua_ls",
-        "emmet_ls",
-        "pyright",
-        "jdtls",
+        "clangd"
       },
     })
 
     mason_tool_installer.setup({
       ensure_installed = {
-        "prettier",
-        "stylua",
-        "isort",
-        "black",
-        "pylint",
-        "eslint_d",
+        "prettier"
       },
     })
   end,

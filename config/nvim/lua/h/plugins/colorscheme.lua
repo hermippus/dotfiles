@@ -1,7 +1,7 @@
 return {
-  "vague2k/vague.nvim",
+  "ellisonleao/gruvbox.nvim",
   priority = 1000,
   config = function()
-    vim.cmd("colorscheme vague")
+    vim.cmd("colorscheme gruvbox")
   end
 }
