@@ -21,7 +21,9 @@ return {
 
     mason_lspconfig.setup({
       ensure_installed = {
-        "clangd"
+        "clangd",
+        "html-lsp",
+        "css-lsp",
       },
     })
 

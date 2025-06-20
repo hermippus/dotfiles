@@ -65,5 +65,19 @@ return {
       local hl = "DiagnosticSign" .. type
       vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
     end
+
+    local capabilities = cmp_nvim_lsp.default_capabilities()
+
+    lspconfig.html.setup({
+      capabilities = capabilities,
+    })
+
+    lspconfig.cssls.setup({
+      capabilities = capabilities,
+    })
+
+    lspconfig.clangd.setup({
+      capabilities = capabilities,
+    })
   end,
 }
