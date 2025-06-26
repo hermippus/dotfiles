@@ -23,13 +23,21 @@ return {
       ensure_installed = {
         "clangd",
         "html",
-        "cssls"
+        "cssls",
+        "tailwindcss",
+        "ts_ls", 
+        "vue_ls",
+        "emmet_ls",
+        "pyright",
+        "jdtls"
       },
+      automatic_enable = true
     })
 
     mason_tool_installer.setup({
       ensure_installed = {
-        "prettier"
+        "prettier",
+        "eslint_d"
       },
     })
   end,
